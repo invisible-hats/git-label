@@ -12,7 +12,7 @@ import request from '../lib/request';
  * @param {String} server.repo the git repo to manipulate
  * @param {String} name the name of the label
  * @param {String} color the hexidecimal color of the label
- * @param {String} description the hexidecimal color of the label
+ * @param {String} description the description of the label
  * @return {Promise}
  */
 export function createLabel({api, token, repo}, name, color, description) {
