@@ -17,7 +17,7 @@ import request from '../lib/request';
  */
 export function createLabel({api, token, repo}, name, color, description) {
   return request({
-    headers: {'User-Agent': 'request', 'Authorization': `token ${token}`},
+    headers: {'User-Agent': 'request', 'Authorization': `token ${token}`, 'Accept': 'text/html, application/vnd.github.symmetra-preview+json'},
     url: `${api}/${repo}/labels`,
     form: JSON.stringify({name, color, description}),
     method: 'POST',
